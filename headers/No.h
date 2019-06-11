@@ -1,11 +1,12 @@
 #ifndef NO_H
 #define NO_H
 
+#include "Lista.h"
 /* Definição da Estrutura de Nó */
 
 struct no{
     char *palavra;
-    int *indices;
+    struct l_int **indices;
     int quantidade;
 };
 

@@ -1,15 +1,3 @@
-# Name of the project
-PROJ_NAME=indexador
-
-# .c files
-C_SOURCE=$(wildcard *.c)
-
-# .h files
-H_SOURCE=$(wildcard *.h)
-
-# Object files
-OBJ=$(C_SOURCE:.c=.o)
-
 # Compiler
 CC=gcc
 
@@ -17,22 +5,28 @@ CC=gcc
 CC_FLAGS=-c         \
          -W         \
          -Wall      \
-         -ansi      \
          -pedantic
+
+
+DEPS= headers/Arquivos.h headers/Arv.h headers/ArvAVL.h headers/ArvTRIE.h headers/Lista.h headers/No.h headers/TabelaHash.h 
+
+OBJ= Arquivos.o Arv.o ArvAVL.o ArvTRIE.o Lista.o No.o TabelaHash.o 
+
+EXEC= indexador
 
 #
 # Compilation and linking
 #
-all: $(PROJ_NAME)
 
-$(PROJ_NAME): $(OBJ)
-	$(CC) -o $@ $^
 
-%.o: %.c %.h
-	$(CC) -o $@ $< $(CC_FLAGS)
+main: main.c $(OBJ)
+	$(CC) -o ${EXEC} $^ $(CFLAGS)
+	rm -f *.o
 
-main.o: main.c $(H_SOURCE)
-	$(CC) -o $@ $< $(CC_FLAGS)
+%.o: sources/%.c $(DEPS)
+	$(CC) -c -o $@ $< $(CFLAGS)
+
+
 
 clean:
-	rm -rf *.o $(PROJ_NAME) *~
+
