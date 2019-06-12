@@ -5,7 +5,8 @@ CC=gcc
 CC_FLAGS=-c         \
          -W         \
          -Wall      \
-         -pedantic
+         -pedantic	\
+		 -g
 
 
 DEPS= headers/Arquivos.h headers/Arv.h headers/ArvAVL.h headers/ArvTRIE.h headers/Lista.h headers/No.h headers/TabelaHash.h 

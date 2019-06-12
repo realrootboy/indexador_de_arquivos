@@ -15,12 +15,14 @@ int main(void){
 
 	FILE* f = abreArquivo("README.md");
 
-	while((_fseek = lePalavra(f, palavra, BUFFER)))
-		
+	while((_fseek = lePalavra(f, palavra, BUFFER)));
 
-	adicionaL_palavras(l, "renan", 5);
+	
+	
 	
 	percorreL_palavras(l, imprimeL_palavras_celula);
+	
+
 
 	fechaArquivo(f);
 

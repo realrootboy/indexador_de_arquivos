@@ -35,7 +35,7 @@ No* criarNo(char *palavra, int indice){
 void liberaNo(No *no){
     if( no == NULL ) return;
     if( no->palavra != NULL ) free(no->palavra);
-    if( no->indices != NULL ) percorreL_int(no->indices, liberaL_int_celula);
+    if( no->indices != NULL ) percorreL_int(no->indices, liberaL_int_celula, 0);
     free(no->indices);
     free(no);
 }
@@ -45,7 +45,6 @@ void imprimeNo(No *no){
     if( no == NULL ) return;
     if( no->palavra != NULL && no->indices != NULL ){
         printf("%s ", no->palavra);
-        percorreL_int(no->indices, &imprimeL_int_celula);
-        printf("\n");
+        percorreL_int(no->indices, imprimeL_int_celula, 1);
     }
 }

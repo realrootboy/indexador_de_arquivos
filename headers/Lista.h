@@ -49,7 +49,7 @@ typedef struct l_int* L_int;
 L_int* criaL_int();
 
 // -- Percorre Uma Lista de Inteiros Com Uma Função
-void percorreL_int(L_int *l, void (*fnc)(L_int*));
+void percorreL_int(L_int *l, void (*fnc)(L_int*), int mode);
 
 // -- Libera Uma Celula de Lista de Inteiros
 void liberaL_int_celula(L_int *l);
