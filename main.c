@@ -7,20 +7,23 @@
 
 #define BUFFER 64
 
-int main(void){
+
+
+int main(int argc, char* argv[]){
 	L_palavras *l = criaL_palavras();
 
+	int i = 1;
+
 	char palavra[BUFFER];
-	int _fseek = 0;
+	int _ftell = 0;
 
-	FILE* f = abreArquivo("README.md");
-
-	while((_fseek = lePalavra(f, palavra, BUFFER)));
-
+	FILE* f = abreArquivo("don_casmurro.txt");
+	
+	while((_ftell = lePalavra(f, palavra, BUFFER)))
+		adicionaL_palavras(l, palavra, _ftell);
 	
 	
-	
-	percorreL_palavras(l, imprimeL_palavras_celula);
+	percorreL_palavras(l, imprimeL_palavras_celula, 1);
 	
 
 

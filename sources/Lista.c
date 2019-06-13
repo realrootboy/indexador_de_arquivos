@@ -14,13 +14,17 @@ L_palavras* criaL_palavras(){
 }
 
 // -- Percorre Uma Lista de Palavras Com Uma Função
-void percorreL_palavras(L_palavras *l, void (*fnc)(L_palavras*)){
+void percorreL_palavras(L_palavras *l, void (*fnc)(L_palavras*), int mode){
     if( l == NULL ) return;
     if( *l == NULL ) return;
 
-    fnc(l);
-
-    percorreL_palavras(&((*l)->proximo), fnc);
+    if( !mode ){
+        percorreL_palavras(&((*l)->proximo), fnc, mode);
+        fnc(l);
+    } else {
+        fnc(l);
+        percorreL_palavras(&((*l)->proximo), fnc, mode);
+    }
 }
 
 // -- Libera Uma Celula de Lista de Palavras
@@ -29,13 +33,15 @@ void liberaL_palavras_celula(L_palavras *l){
     if( *l == NULL ) return;
 
     liberaNo((*l)->dados);
+
+    free(*l);
 }
 
 // -- Destroi uma Lista de Palavras
 void destroiL_palavras(L_palavras *l){
     if( l == NULL ) return;
     
-    percorreL_palavras(l, liberaL_palavras_celula);
+    percorreL_palavras(l, liberaL_palavras_celula, 0);
 
     free(l);
 }

@@ -18,7 +18,7 @@ typedef struct l_palavras* L_palavras;
 L_palavras* criaL_palavras();
 
 // -- Percorre Uma Lista de Palavras Com Uma Função
-void percorreL_palavras(L_palavras *l, void (*fnc)(L_palavras*));
+void percorreL_palavras(L_palavras *l, void (*fnc)(L_palavras*), int mode);
 
 // -- Libera Uma Celula de Lista de Palavras
 void liberaL_palavras_celula(L_palavras *l);

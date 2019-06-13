@@ -1,7 +1,25 @@
 #include <ctype.h>
 #include <stdio.h>
+#include <string.h>
 
 #include "../headers/Arquivos.h"
+
+int eValido(char c){
+    switch(c){
+        case '(':
+        case ')':
+        case '.':
+        case ',':
+        case '"':
+        case '\'':
+        case ' ':
+        case '_':
+        case '\n':
+            return 0;
+        default:
+            return 1;
+    }
+}
 
 FILE* abreArquivo(char *path){
     return fopen(path, "r");
@@ -13,16 +31,18 @@ void fechaArquivo(FILE* f){
 
 int lePalavra(FILE *f, char *str, int BUFFER){
     int i = 0;
-    char c;
+    int c;
     while ((c = fgetc( f )) != EOF) if(isalpha((int)c)||isdigit((int)c)) break;
 
-    if (c != EOF) str[i++] = c;
+    if (c != EOF) str[i++] = tolower(c);
     else return 0;
     
-    while (i<BUFFER-1 && (c = fgetc(f))!= EOF && (isalpha((int)c)||isdigit((int)c)))
-        str[i++] = c;
+    while (i<BUFFER-1 && ((c = (int) fgetc(f))!= EOF) && (eValido(c)))
+        str[i++] = tolower(c);
+    
     
     str[i] = '\0';
 
-    return ftell(f) - i;
+
+    return ftell(f) - strlen(str);
 }
