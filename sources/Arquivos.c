@@ -13,8 +13,9 @@ int eValido(char c){
         case '"':
         case '\'':
         case ' ':
-        case '_':
         case '\n':
+        case '?':
+        case '!':
             return 0;
         default:
             return 1;
