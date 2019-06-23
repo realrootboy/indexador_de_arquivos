@@ -54,11 +54,80 @@ void liberaNoArvBin(ArvBin *arv){
     free(*arv);
 }
 
+// -- Trata as Situações De Remoção 
+ArvBin removeNoAtualArvBin(ArvBin atual){
+    ArvBin a;
+    ArvBin b;
+
+    if(atual->l == NULL){
+        a = atual->r;
+        
+        liberaNoArvBin(&atual);
+
+        return a;
+    }
+
+    if(atual->r != NULL){
+        a = atual->l;
+        b = a->r;
+
+        if( b != NULL ){
+            while( b->r != NULL){
+                a = b;
+                b = a->r;
+            }
+
+            a->r = b->l;
+            b->l = atual->l;
+            b->r = atual->r;
+
+            liberaNoArvBin(&atual);
+
+            return b;
+        } else {
+            a->r = atual->r;
+
+            liberaNoArvBin(&atual);
+
+            return a;
+        }
+    }
+
+    a = atual->l;
+    a->r = atual->r;
+
+    liberaNoArvBin(&atual);
+
+    return a;
+
+}
+
 // -- Remove Um Nó de Arvore Binária
-void removeNoArvBin(ArvBin *arv, char palavra){
+void removeNoArvBin(ArvBin *arv, char *palavra){
     if( arv == NULL ) return;
     
-    
+    char cmp;
+
+    ArvBin anterior = NULL;
+    ArvBin atual = (*arv);
+
+    while(atual != NULL){
+        cmp = strcmp(atual->info->palavra, palavra);
+
+        if(0 == cmp){
+            if(atual == (*arv)) *arv = removeNoAtualArvBin(atual);
+            else{
+                if(anterior->l == atual) anterior->l = removeNoAtualArvBin(atual);
+                else anterior->r = removeNoAtualArvBin(atual);
+            }
+        }
+
+        anterior = atual;
+
+        if( cmp < 0) atual = atual->l;
+        else atual = atual->r;
+    }
+
 }
 
 // -- Imprime Um Nó de Arvore Binária

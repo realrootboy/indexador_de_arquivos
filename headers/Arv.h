@@ -27,8 +27,11 @@ void liberaArvBin(ArvBin *arv);
 // -- Libera Um Nó de Arvore Binária
 void liberaNoArvBin(ArvBin *arv);
 
+// -- Trata as Situações De Remoção 
+ArvBin removeNoAtualArvBin(ArvBin atual);
+
 // -- Remove Um Nó de Arvore Binária
-void removeNoArvBin(ArvBin *arv, char palavra);
+void removeNoArvBin(ArvBin *arv, char *palavra);
 
 // -- Imprime Um Nó de Arvore Binária
 void imprimeNoArvBin(ArvBin *arv);
