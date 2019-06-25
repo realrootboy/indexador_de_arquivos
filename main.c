@@ -4,6 +4,7 @@
 
 #include "headers/Arquivos.h"
 #include "headers/Arv.h"
+#include "headers/ArvAVL.h"
 #include "headers/No.h"
 #include "headers/Lista.h"
 
@@ -36,12 +37,18 @@ int main(int argc, char* argv[]){
 		while((_ftell = lePalavra(f, palavra, BUFFER)))
 			insereArvBin(arv, palavra, _ftell);
 		
-		removeNoArvBin(arv, "a");
-
 		percorreArvoreCen(arv, imprimeNoArvBin);
 		liberaArvBin(arv);
 	} else if(0 == strcmp(argv[1], "arvore_balanceada")){
+		ArvAvl* arvavl = criarArvAvl();
 
+		while((_ftell = lePalavra(f, palavra, BUFFER)))
+			insereArvAvl(arvavl, palavra, _ftell);
+
+		//rotDirArvAvl(arvavl);
+
+		percorreArvoreAvlCen(arvavl, imprimeNoArvAvl);
+		liberaArvAvl(arvavl);		
 	} else if(0 == strcmp(argv[1], "hash")){
 
 	} else {

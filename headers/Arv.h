@@ -36,13 +36,13 @@ void removeNoArvBin(ArvBin *arv, char *palavra);
 // -- Imprime Um Nó de Arvore Binária
 void imprimeNoArvBin(ArvBin *arv);
 
-// -- Percorre Arvore Pre-fixado
+// -- Percorre Arvore Binária Pre-fixado
 void percorreArvorePre(ArvBin *arv, void (*fnc)(ArvBin*));
 
-// -- Percorre Arvore Central
+// -- Percorre Arvore Binária Central
 void percorreArvoreCen(ArvBin *arv, void (*fnc)(ArvBin*));
 
-// -- Percorre Arvore Pos-fixado
+// -- Percorre Arvore Binária Pos-fixado
 void percorreArvorePos(ArvBin *arv, void (*fnc)(ArvBin*));
 
 

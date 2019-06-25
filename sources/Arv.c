@@ -23,6 +23,9 @@ void insereArvBin(ArvBin *arv, char *palavra, int indice){
 
     if( *arv == NULL ){
         *arv = (ArvBin) malloc(sizeof(struct arvbin));
+
+        if((*arv) == NULL) return;
+
         (*arv)->info = criarNo(palavra, indice);
         (*arv)->l = NULL;
         (*arv)->r = NULL;
@@ -99,7 +102,6 @@ ArvBin removeNoAtualArvBin(ArvBin atual){
     liberaNoArvBin(&atual);
 
     return a;
-
 }
 
 // -- Remove Um Nó de Arvore Binária
@@ -127,7 +129,6 @@ void removeNoArvBin(ArvBin *arv, char *palavra){
         if( cmp < 0) atual = atual->l;
         else atual = atual->r;
     }
-
 }
 
 // -- Imprime Um Nó de Arvore Binária
