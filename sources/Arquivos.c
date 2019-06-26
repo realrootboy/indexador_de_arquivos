@@ -40,12 +40,14 @@ int lePalavra(FILE *f, char *str, int BUFFER){
     if (c != EOF) str[i++] = tolower(c);
     else return 0;
     
-    while (i<BUFFER-1 && ((c = (int) fgetc(f))!= EOF) && (eValido(c)))
+    while (i<BUFFER-1 && ((c = (int) fgetc(f))!= EOF) && (eValido(c))){
+        printf("%c - %d\n", c, c);
         str[i++] = tolower(c);
+    }
     
-    
-    str[i] = '\0';
 
+
+    str[i] = '\0';
 
     return ftell(f) - strlen(str);
 }

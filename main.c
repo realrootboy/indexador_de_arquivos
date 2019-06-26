@@ -19,7 +19,7 @@ int main(int argc, char* argv[]){
 	char palavra[BUFFER];
 	int _ftell = 0;
 
-	FILE* f = abreArquivo("textos/dracula.txt");
+	FILE* f = abreArquivo("textos/frase_amor.txt");
 
 
 	if(0 == strcmp(argv[1], "lista")){
@@ -44,8 +44,6 @@ int main(int argc, char* argv[]){
 
 		while((_ftell = lePalavra(f, palavra, BUFFER)))
 			insereArvAvl(arvavl, palavra, _ftell);
-
-		//rotDirArvAvl(arvavl);
 
 		percorreArvoreAvlCen(arvavl, imprimeNoArvAvl);
 		liberaArvAvl(arvavl);		
