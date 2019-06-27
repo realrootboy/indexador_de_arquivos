@@ -18,6 +18,7 @@ int eValido(char c){
         case '!':
         case '[':
         case ']':
+        case '-':
             return 0;
         default:
             return 1;
@@ -35,13 +36,12 @@ void fechaArquivo(FILE* f){
 int lePalavra(FILE *f, char *str, int BUFFER){
     int i = 0;
     int c;
-    while ((c = fgetc( f )) != EOF) if(eValido(c)) break;
+    while ((c = fgetc( f )) != EOF) if(eValido(c) && isalpha(c)) break;
 
     if (c != EOF) str[i++] = tolower(c);
     else return 0;
     
-    while (i<BUFFER-1 && ((c = (int) fgetc(f))!= EOF) && (eValido(c))){
-        printf("%c - %d\n", c, c);
+    while (i<BUFFER-1 && ((c = (int) fgetc(f))!= EOF) && (eValido(c)) && isalpha(c)){
         str[i++] = tolower(c);
     }
     
