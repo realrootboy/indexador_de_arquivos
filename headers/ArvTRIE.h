@@ -3,6 +3,7 @@
 
 #define R_WAY 26
 
+
 #include "Lista.h"
 
 /* Definição da Estrutura de Arvore Trie */
@@ -21,7 +22,7 @@ typedef struct arvtrie* ArvTrie;
 ArvTrie* criaTrie();
 
 // -- Libera uma Trie
-void liberaTrie();
+void liberaTrie(ArvTrie* tr);
 
 // -- Insere Uma Palavra Na Trie
 void insereTrie(ArvTrie *tr, char *palavra, int indice);
