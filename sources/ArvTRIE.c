@@ -6,50 +6,96 @@
 
 /* Definição das Funções da Arvore Trie */
 
-// -- Cria uma Trie
-ArvTrie* criaTrie(){
+// -- CRIA UM NÓ DE ARVORE TRIE
+ArvTrie* criaNoTrie(){
     ArvTrie *tr = (ArvTrie*) malloc(sizeof(ArvTrie));
-        
+    
+    int i = 0;
+    
+    if(tr != NULL){
+        tr->isfolha = 0;
+        tr->indices = NULL;
+        for( i = 0 ; i < R_WAY ; i++ ) tr->filho[i] = NULL;
+    }
+
     return tr;
 }
 
-// -- Libera uma Trie
-void liberaTrie(ArvTrie* tr){
-    if(tr == NULL) return;
+// -- INSERE NUMA ARVORE TRIE
+void insereTrie(ArvTrie **tr, char *palavra, int indice){
+    if( tr == NULL ) return;
 
-    if(*tr == NULL) return;
+    ArvTrie *arv = *tr;
 
-    int i = 0;
+    char next;
+    char nova = 0;
 
-    for( i = 0 ; i < R_WAY ; i++ )
-        liberaTrie(&((*tr)->filho[i]));
-    
-    percorreL_int((*tr)->indices, liberaL_int_celula, 0);
-    free((*tr)->indices);
-    free(*tr);
-}
+    while(*palavra){
+        
+        next = *palavra - 'a';
 
-// -- Insere Uma Palavra Na Trie
-void insereTrie(ArvTrie *tr, char *palavra, int indice){
-    if(tr == NULL) return;
+        if(arv->filho[next] == NULL){
+            arv->filho[next] = criaNoTrie();
+            nova = 1;
+        }
 
-    if(*tr == NULL) return;
+        arv = arv->filho[next];
 
-   
-}
+        palavra++;
 
-// -- Imprime Uma Trie
-void imprimeTrie(ArvTrie *tr){
-    if(tr == NULL) return;
-
-    if(*tr == NULL) return;
-
-    int i = 0;
-
-    printf("%c", (*tr)->letra);
-    for( i = 0 ; i < R_WAY ; i++ ){
-        imprimeTrie(&((*tr)->filho[i]));
-        printf("\n");
     }
+
+    if(nova) arv->indices = criaL_int();
     
+    adicionaL_int(arv->indices, indice);
+
+    arv->isfolha = 1;
+}
+
+// -- BUSCA UMA PALAVRA NA TRIE
+int buscaTrie(ArvTrie *tr, char *palavra){
+    if( tr == NULL ) return 0;
+
+    ArvTrie *arv = tr;
+
+    while(*palavra){
+        arv = arv->filho[*palavra - 'a'];
+
+        if( arv == NULL ) return 0;
+
+        palavra++;
+    }
+
+    return arv->isfolha;
+}
+
+// -- RETORNA SE UM NÓ DA TRIE TEM FILHO
+int temFilhoTrie(ArvTrie *tr){
+    if( tr == NULL ) return -1;
+
+    int i = 0;
+
+    for( i = 0 ; i < R_WAY ; i++)
+        if(tr->filho[i]) return 1;
+
+    return 0;
+}
+
+// -- REMOVE UMA PALAVRA DA TRIE
+void liberaTrie(ArvTrie **tr){
+    if( tr == NULL ) return;
+    if( *tr == NULL ) return;
+
+    int i = 0;
+
+    for( i = 0 ; i < R_WAY ; i++ ){
+        liberaTrie(&((*tr)->filho[i]));
+    }
+
+    if((*tr)->isfolha) percorreL_int((*tr)->indices, liberaL_int_celula, 0);
+    
+    free((*tr)->indices);
+    
+    free(*tr);
+
 }

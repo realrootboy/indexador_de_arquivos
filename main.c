@@ -20,7 +20,7 @@ int main(int argc, char* argv[]){
 	char palavra[BUFFER];
 	int _ftell = 0;
 
-	FILE* f = abreArquivo("textos/frase_amor.txt");
+	FILE* f = abreArquivo("textos/dracula.txt");
 
 
 	if(0 == strcmp(argv[1], "lista")){
@@ -49,13 +49,13 @@ int main(int argc, char* argv[]){
 		percorreArvoreAvlCen(arvavl, imprimeNoArvAvl);
 		liberaArvAvl(arvavl);		
 	} else if(0 == strcmp(argv[1], "trie")){
-		ArvTrie *tr = criaTrie();
+		ArvTrie *tr = criaNoTrie();
 
 		while((_ftell = lePalavra(f, palavra, BUFFER)))
-			insereTrie(tr, palavra, _ftell);
+			insereTrie(&tr, palavra, _ftell);
 
 		//imprimeTrie(tr);
-		liberaTrie(tr);
+		liberaTrie(&tr);
 	} else if(0 == strcmp(argv[1], "hash")){
 
 	} else {
