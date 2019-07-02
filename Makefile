@@ -3,7 +3,8 @@ CC=gcc
 
 # Flags for compiler
 CC_FLAGS=-c         \
-         -W         \
+         -lm		\
+		 -W         \
          -Wall      \
          -pedantic	\
 		 -g

@@ -8,10 +8,14 @@
 #include "headers/ArvTRIE.h"
 #include "headers/No.h"
 #include "headers/Lista.h"
+#include "headers/TabelaHash.h"
 
 #define BUFFER 64
 
+
 int main(int argc, char* argv[]){
+	srand(100);
+
 	if(argc < 2){
 		printf("Falta de argumentos\n");
 		return 0;
@@ -57,6 +61,14 @@ int main(int argc, char* argv[]){
 		//imprimeTrie(tr);
 		liberaTrie(&tr);
 	} else if(0 == strcmp(argv[1], "hash")){
+		Hash *h = criaHash(9999991);
+
+		while((_ftell = lePalavra(f, palavra, BUFFER)))
+			insereHash(h, palavra, _ftell);
+		
+		printf("quantidade: %d / colisoes: %d\n", h->qnt, h->col);
+
+		liberaHash(h);
 
 	} else {
 		printf("Tipo Invalido\n");
