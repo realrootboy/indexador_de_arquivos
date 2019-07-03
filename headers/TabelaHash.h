@@ -8,7 +8,6 @@
 
 struct hash{
     int qnt;
-    int col;
     int pesos[64];
     int TABLE_SIZE;
     L_palavras **itens;

@@ -14,7 +14,6 @@ Hash* criaHash(int size){
 
     if( h != NULL ){
         h->qnt = 0;
-        h->col = 0;
         h->TABLE_SIZE = size;
         
         h->itens = (L_palavras**) malloc(sizeof(L_palavras*) * size);
@@ -78,22 +77,7 @@ void insereHash(Hash *h, char *palavra, int indice){
     }
 
     if( h->itens[key] == NULL ){ h->itens[key] = criaL_palavras(); }
-    else{
-        L_palavras *aux = h->itens[key];
-
-        int flag = 1;
-
-        while(*aux != NULL){
-            if(0 == strcmp((*aux)->dados->palavra, palavra)){
-                flag = 0;
-                break;
-            }
-            aux = &((*aux)->proximo);
-        }
-
-        if(flag) h->col++;
-    }
-
+    
     h->qnt++;
 
     adicionaL_palavras(h->itens[key], palavra, indice);
