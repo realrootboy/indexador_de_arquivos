@@ -30,7 +30,7 @@ FILE* abreArquivo(char *path){
 }
 
 void fechaArquivo(FILE* f){
-    fclose(f);
+    if(f != NULL) fclose(f);
 }
 
 int lePalavra(FILE *f, char *str, int BUFFER){

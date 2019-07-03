@@ -1,0 +1,4 @@
+Insertion time of textos/pequeno1.txt in binary tree: 0.000027 seconds
+Insertion time of textos/pequeno2.txt in binary tree: 0.000013 seconds
+Insertion time of textos/dracula.txt in binary tree: 1.601166 seconds
+Insertion time of textos/don_casmurro.txt in binary tree: 0.380605 seconds

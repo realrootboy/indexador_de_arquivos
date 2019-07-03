@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 #include "headers/Arquivos.h"
 #include "headers/Arv.h"
@@ -12,69 +13,154 @@
 
 #define BUFFER 64
 
-
 int main(int argc, char* argv[]){
+
+    /* --------------------------------------------------- */
+
+    // -- RANDOMICO PADRÃO COM SEED 100
 	srand(100);
 
-	if(argc < 2){
+    /* Verificação da quantidade dos parametros de entrada */
+	if(argc < 3){
 		printf("Falta de argumentos\n");
 		return 0;
 	}
 
+    /* Variaveis auxiliares */
+    int i = 0;
 	char palavra[BUFFER];
 	int _ftell = 0;
+    int arqs = argc - 2;
 
-	FILE* f = abreArquivo("textos/dracula.txt");
+    /* Variaveis de Calculo de Tempo */
+    clock_t t = clock();
+    double time_taken = 0; 
+        // -- t = clock();
+        // -- t = clock() - t;
+        // -- double time_taken = ((double)t)/CLOCKS_PER_SEC;
 
+    /* --------------------------------------------------- */
 
+    /* Criação de vetor de arquivos */
+	FILE* f[arqs];
+    for( i = 0 ; i < arqs ; i++ ) f[i] = NULL;
+    for( i = 0 ; i < arqs ; i++ ){
+        f[i] = abreArquivo(argv[i + 2]);
+        if( f[i] == NULL ) break; 
+    }
+        // -- TRATAMENTO DE ERRO PARA ARQUIVOS
+    if( i < arqs ){
+        printf("Arquivo %s não encontrado.\n", argv[i + 2]);
+        for( i = 0 ; i < arqs ; i++ ) fechaArquivo(f[i]);
+        return -1;
+    }
+
+    /* --------------------------------------------------- */
+
+    /* Uso de Listas Encadeadas */
 	if(0 == strcmp(argv[1], "lista")){
-		L_palavras *l = criaL_palavras();
+		L_palavras *l[arqs];
 
-		while((_ftell = lePalavra(f, palavra, BUFFER)))
-			adicionaL_palavras(l, palavra, _ftell);
+        for( i = 0 ; i < arqs ; i++ ) l[i] = criaL_palavras();
 
-		percorreL_palavras(l, imprimeL_palavras_celula, 1);
+        t = clock();
 
-		destroiL_palavras(l);
+        for( i = 0 ; i < arqs ; i++ ){
+           	t = clock();
+	 
+            while((_ftell = lePalavra(f[i], palavra, BUFFER)))
+			    adicionaL_palavras(l[i], palavra, _ftell);
+
+            t = clock() - t;
+            time_taken = ((double) t) / CLOCKS_PER_SEC;
+
+            printf("Insertion time of %s in list: %lf seconds\n", argv[i + 2], time_taken);
+        }
+
+		for( i = 0 ; i < arqs ; i++ ) destroiL_palavras(l[i]);
+
+    /* Uso de Arvores de Busca Binária */
 	} else if(0 == strcmp(argv[1], "arvore")){
-		ArvBin *arv = criarArvBin();
+		ArvBin *arv[arqs];
 
-		while((_ftell = lePalavra(f, palavra, BUFFER)))
-			insereArvBin(arv, palavra, _ftell);
-		
-		percorreArvoreCen(arv, imprimeNoArvBin);
-		liberaArvBin(arv);
-	} else if(0 == strcmp(argv[1], "arvore_balanceada")){
-		ArvAvl *arvavl = criarArvAvl();
+        for( i = 0 ; i < arqs ; i++ ) arv[i] = criarArvBin();
 
-		while((_ftell = lePalavra(f, palavra, BUFFER)))
-			insereArvAvl(arvavl, palavra, _ftell);
+        for( i = 0 ; i < arqs ; i++ ){		
+            t = clock();
 
-		percorreArvoreAvlCen(arvavl, imprimeNoArvAvl);
-		liberaArvAvl(arvavl);		
+            while((_ftell = lePalavra(f[i], palavra, BUFFER)))
+			    insereArvBin(arv[i], palavra, _ftell);
+            
+		    t = clock() - t;
+            time_taken = ((double) t) / CLOCKS_PER_SEC;
+            printf("Insertion time of %s in binary tree: %lf seconds\n", argv[i + 2], time_taken);
+
+        }
+		for( i = 0 ; i < arqs ; i++ ) liberaArvBin(arv[i]);
+    /* Uso de Arvores Balanceadas AVL */
+	} else if(0 == strcmp(argv[1], "avl")){
+		ArvAvl *arvavl[arqs];
+
+        for( i = 0 ; i < arqs ; i++ ) arvavl[i] = criarArvAvl();
+
+        for( i = 0 ; i < arqs ; i++ ){
+		    t = clock();
+
+            while((_ftell = lePalavra(f[i], palavra, BUFFER)))
+			    insereArvAvl(arvavl[i], palavra, _ftell);
+            
+            t = clock() - t;
+            time_taken = ((double) t) / CLOCKS_PER_SEC;
+            printf("Insertion time of %s in balanced binary tree: %lf seconds\n", argv[i + 2], time_taken);
+
+        }
+		for( i = 0 ; i < arqs ; i++ ) liberaArvAvl(arvavl[i]);
+    /* Uso de Arvores Trie */		
 	} else if(0 == strcmp(argv[1], "trie")){
-		ArvTrie *tr = criaNoTrie();
+		ArvTrie *tr[arqs];
 
-		while((_ftell = lePalavra(f, palavra, BUFFER)))
-			insereTrie(&tr, palavra, _ftell);
+        for( i = 0 ; i < arqs ; i++ ) tr[i] = criaNoTrie();
 
-		//imprimeTrie(tr);
-		liberaTrie(&tr);
+        for( i = 0 ; i < arqs ; i++ ){
+		    t = clock();
+
+            while((_ftell = lePalavra(f[i], palavra, BUFFER)))
+			    insereTrie(&(tr[i]), palavra, _ftell);
+            
+            t = clock() - t;
+            time_taken = ((double) t) / CLOCKS_PER_SEC;
+            printf("Insertion time of %s in trie: %lf seconds\n", argv[i + 2], time_taken);
+
+        }
+		for( i = 0 ; i < arqs ; i++ )liberaTrie(&(tr[i]));
+    /* Uso de Tabelas Hash */
 	} else if(0 == strcmp(argv[1], "hash")){
-		Hash *h = criaHash(9999991);
+		Hash *h[arqs];
+        
+        for( i = 0 ; i < arqs ; i++ ) h[i] = criaHash(9999991);
 
-		while((_ftell = lePalavra(f, palavra, BUFFER)))
-			insereHash(h, palavra, _ftell);
-		
-		printf("quantidade: %d / colisoes: %d\n", h->qnt, h->col);
+        for( i = 0 ; i < arqs ; i++ ){
+    		t = clock();
 
-		liberaHash(h);
+            while((_ftell = lePalavra(f[i], palavra, BUFFER)))
+		    	insereHash(h[i], palavra, _ftell);
+            
+		    t = clock() - t;
+            time_taken = ((double) t) / CLOCKS_PER_SEC;
+            printf("Insertion time of %s in hash: %lf seconds\n", argv[i + 2], time_taken);
 
+        }
+		for( i = 0 ; i < arqs ; i++ ) liberaHash(h[i]);
+
+        // -- TRATAMENTO DE ERRO PARA ESTRUTURA INVALIDA
 	} else {
 		printf("Tipo Invalido\n");
 	}
 
-	fechaArquivo(f);
+    /* --------------------------------------------------- */
+
+    /* Fechando corretamente os arquivos lidos */
+    for( i = 0 ; i < arqs ; i++ ) fechaArquivo(f[i]);
 
 	return 0;
 }

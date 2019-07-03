@@ -7,7 +7,6 @@
 struct no{
     char *palavra;
     struct l_int **indices;
-    int quantidade;
 };
 
 typedef struct no No;
