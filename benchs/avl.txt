@@ -1,0 +1,13 @@
+Insertion time of ../textos/10 dracula.txt in balanced binary tree: 1.924807 seconds
+Insertion time of ../textos/11 MobyDick.txt in balanced binary tree: 3.310564 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in balanced binary tree: 45.905407 seconds
+Insertion time of ../textos/13 bible.txt in balanced binary tree: 224.398815 seconds
+Insertion time of ../textos/1 BeeMovie.txt in balanced binary tree: 0.024162 seconds
+Insertion time of ../textos/2 Alice.txt in balanced binary tree: 0.107665 seconds
+Insertion time of ../textos/3 Oz.txt in balanced binary tree: 0.198423 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in balanced binary tree: 0.459175 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in balanced binary tree: 0.403854 seconds
+Insertion time of ../textos/6 don_casmurro.txt in balanced binary tree: 0.513296 seconds
+Insertion time of ../textos/7 TomSawyer.txt in balanced binary tree: 0.467370 seconds
+Insertion time of ../textos/8 Frankenstein.txt in balanced binary tree: 0.527003 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in balanced binary tree: 0.859427 seconds
