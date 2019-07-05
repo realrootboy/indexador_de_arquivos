@@ -28,45 +28,44 @@ void insereTrie(ArvTrie **tr, char *palavra, int indice){
     ArvTrie *arv = *tr;
 
     char next;
-    char nova = 0;
 
     while(*palavra){
-        
         next = *palavra - 'a';
 
         if(arv->filho[next] == NULL){
             arv->filho[next] = criaNoTrie();
-            nova = 1;
         }
 
         arv = arv->filho[next];
 
         palavra++;
-
     }
-
-    if(nova) arv->indices = criaL_int();
     
+    if(arv->indices == NULL) arv->indices = criaL_int();
+
     adicionaL_int(arv->indices, indice);
 
     arv->isfolha = 1;
 }
 
 // -- BUSCA UMA PALAVRA NA TRIE
-int buscaTrie(ArvTrie *tr, char *palavra){
-    if( tr == NULL ) return 0;
+L_int* buscaTrie(ArvTrie **tr, char *palavra){
+    if( tr == NULL ) return NULL;
 
-    ArvTrie *arv = tr;
+    ArvTrie *arv = *tr;
 
     while(*palavra){
         arv = arv->filho[*palavra - 'a'];
 
-        if( arv == NULL ) return 0;
+        if( arv == NULL ) return NULL;
 
         palavra++;
     }
 
-    return arv->isfolha;
+    printf("PORA: %d\n", arv->isfolha);
+
+    percorreL_int(arv->indices, imprimeL_int_celula, 1);
+    return arv->indices;
 }
 
 // -- RETORNA SE UM NÓ DA TRIE TEM FILHO

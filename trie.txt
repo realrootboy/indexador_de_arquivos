@@ -1,4 +1,0 @@
-Insertion time of textos/pequeno1.txt in trie: 0.000025 seconds
-Insertion time of textos/pequeno2.txt in trie: 0.000017 seconds
-Insertion time of textos/dracula.txt in trie: 1.202805 seconds
-Insertion time of textos/don_casmurro.txt in trie: 0.160623 seconds

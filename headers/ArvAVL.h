@@ -18,6 +18,9 @@ ArvAvl* criarArvAvl();
 // -- Insere Um Nó Na Arvore Binária AVL
 int insereArvAvl(ArvAvl *arv, char *palavra, int indice);
 
+// -- Busca um Nó Na Arvore Binária AVL e Retorna Seus Indices
+L_int* buscaArvAvl(ArvAvl *arv, char *palavra);
+
 // -- Libera Uma Arvore Binária AVL
 void liberaArvAvl(ArvAvl *arv);
 

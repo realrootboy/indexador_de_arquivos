@@ -31,6 +31,6 @@ int hashingFunct(char *palavra, int *p);
 void insereHash(Hash *h, char *palavra, int indice);
 
 // -- Busca na Hashing
-//No* buscaHash(Hash *h, char *palavra);
+L_int* buscaHash(Hash *h, char *palavra);
 
 #endif

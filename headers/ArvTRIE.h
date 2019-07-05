@@ -24,7 +24,7 @@ ArvTrie* criaNoTrie();
 void insereTrie(ArvTrie **tr, char *palavra, int indice);
 
 // -- BUSCA UMA PALAVRA NA TRIE
-int buscaTrie(ArvTrie *tr, char *palavra);
+L_int* buscaTrie(ArvTrie **tr, char *palavra);
 
 // -- RETORNA SE UM NÓ DA TRIE TEM FILHO
 int temFilhoTrie(ArvTrie *tr);

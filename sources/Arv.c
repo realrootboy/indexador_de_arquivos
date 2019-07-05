@@ -39,6 +39,18 @@ void insereArvBin(ArvBin *arv, char *palavra, int indice){
     }
 }
 
+// -- Busca um Nó Na Arvore Binária e Retorna Seus Indices
+L_int* buscaArvBin(ArvBin *arv, char *palavra){
+    if( arv == NULL ) return NULL;
+    if( *arv == NULL ) return NULL;
+    
+    char cmp = strcmp((*arv)->info->palavra, palavra);
+
+    if( cmp < 0 ) buscaArvBin(&((*arv)->l), palavra);
+    else if( !cmp ) return (*arv)->info->indices;
+    else buscaArvBin(&((*arv)->r), palavra);
+}
+
 // -- Libera Uma Arvore Binária
 void liberaArvBin(ArvBin *arv){
     if( arv == NULL ) return;

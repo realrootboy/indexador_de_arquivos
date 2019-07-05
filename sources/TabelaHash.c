@@ -84,7 +84,11 @@ void insereHash(Hash *h, char *palavra, int indice){
 }
 
 // -- Busca na Hashing
-//No* buscaHash(Hash *h, char *palavra){
+L_int* buscaHash(Hash *h, char *palavra){
+    int key = hashingFunct(palavra, h->pesos) % h->TABLE_SIZE;
 
-//}
+    if( h->itens[key] == NULL ) return NULL;
+
+    return buscaL_palavras(h->itens[key], palavra);
+}
 

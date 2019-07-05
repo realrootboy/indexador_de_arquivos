@@ -76,7 +76,12 @@ int main(int argc, char* argv[]){
 
             printf("Insertion time of %s in list: %lf seconds\n", argv[i + 2], time_taken);
         }
-
+        L_int *a;
+        for( i = 0 ; i < arqs ; i++ ){
+            a = buscaL_palavras(l[i], "know");
+            printf("%s in %s: ","know", argv[2 + i]);
+            percorreL_int(a, imprimeL_int_celula, 1);
+        }
 		for( i = 0 ; i < arqs ; i++ ) destroiL_palavras(l[i]);
 
     /* Uso de Arvores de Busca Binária */
@@ -96,6 +101,12 @@ int main(int argc, char* argv[]){
             printf("Insertion time of %s in binary tree: %lf seconds\n", argv[i + 2], time_taken);
 
         }
+        L_int *a;
+        for( i = 0 ; i < arqs ; i++ ){
+            a = buscaArvBin(arv[i], "know");
+            printf("%s in %s: ","know", argv[2 + i]);
+            percorreL_int(a, imprimeL_int_celula, 1);
+        }
 		for( i = 0 ; i < arqs ; i++ ) liberaArvBin(arv[i]);
     /* Uso de Arvores Balanceadas AVL */
 	} else if(0 == strcmp(argv[1], "avl")){
@@ -113,6 +124,12 @@ int main(int argc, char* argv[]){
             time_taken = ((double) t) / CLOCKS_PER_SEC;
             printf("Insertion time of %s in balanced binary tree: %lf seconds\n", argv[i + 2], time_taken);
 
+        }
+        L_int *a;
+        for( i = 0 ; i < arqs ; i++ ){
+            a = buscaArvAvl(arvavl[i], "know");
+            printf("%s in %s: ","know", argv[2 + i]);
+            percorreL_int(a, imprimeL_int_celula, 1);
         }
 		for( i = 0 ; i < arqs ; i++ ) liberaArvAvl(arvavl[i]);
     /* Uso de Arvores Trie */		
@@ -132,6 +149,12 @@ int main(int argc, char* argv[]){
             printf("Insertion time of %s in trie: %lf seconds\n", argv[i + 2], time_taken);
 
         }
+        L_int *a;
+        for( i = 0 ; i < arqs ; i++ ){
+            a = buscaTrie(&tr[i], "know");
+            printf("%s in %s: ","know", argv[2 + i]);
+            percorreL_int(a, imprimeL_int_celula, 1);
+        }
 		for( i = 0 ; i < arqs ; i++ )liberaTrie(&(tr[i]));
     /* Uso de Tabelas Hash */
 	} else if(0 == strcmp(argv[1], "hash")){
@@ -149,6 +172,12 @@ int main(int argc, char* argv[]){
             time_taken = ((double) t) / CLOCKS_PER_SEC;
             printf("Insertion time of %s in hash: %lf seconds\n", argv[i + 2], time_taken);
 
+        }
+        L_int *a;
+        for( i = 0 ; i < arqs ; i++ ){
+            a = buscaHash(h[i], "know");
+            printf("%s in %s: ","know", argv[2 + i]);
+            percorreL_int(a, imprimeL_int_celula, 1);
         }
 		for( i = 0 ; i < arqs ; i++ ) liberaHash(h[i]);
 

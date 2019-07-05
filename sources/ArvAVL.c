@@ -74,6 +74,18 @@ int insereArvAvl(ArvAvl *arv, char *palavra, int indice){
     
 }
 
+// -- Busca um Nó Na Arvore Binária AVL e Retorna Seus Indices
+L_int* buscaArvAvl(ArvAvl *arv, char *palavra){
+    if( arv == NULL ) return NULL;
+    if( *arv == NULL ) return NULL;
+    
+    char cmp = strcmp((*arv)->info->palavra, palavra);
+
+    if( cmp < 0 ) buscaArvAvl(&((*arv)->l), palavra);
+    else if( !cmp ) return (*arv)->info->indices;
+    else buscaArvAvl(&((*arv)->r), palavra);
+}
+
 // -- Libera Uma Arvore Binária AVL
 void liberaArvAvl(ArvAvl *arv){
     if( arv == NULL ) return;

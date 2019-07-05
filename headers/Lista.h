@@ -3,6 +3,34 @@
 
 #include "No.h"
 
+/* Definição da Estrutura de Lista de Inteiros */
+
+struct l_int{
+    int indice;
+    struct l_int *proximo;
+};
+
+typedef struct l_int* L_int;
+
+/* Definição das Funções da Lista de Inteiros */
+
+// -- Cria Uma Lista de Inteiros
+L_int* criaL_int();
+
+// -- Percorre Uma Lista de Inteiros Com Uma Função
+void percorreL_int(L_int *l, void (*fnc)(L_int*), int mode);
+
+// -- Libera Uma Celula de Lista de Inteiros
+void liberaL_int_celula(L_int *l);
+
+// -- Imprime Uma Celula de Lista de Inteiros
+void imprimeL_int_celula(L_int *l);
+
+// -- Adiciona Uma Celula a Uma Lista de Inteiros
+void adicionaL_int(L_int *l, int indice);
+
+/*======================================================*/
+
 /* Definição da Estrutura da Lista de Palavras */
 
 struct l_palavras{
@@ -32,32 +60,10 @@ void imprimeL_palavras_celula(L_palavras *l);
 // -- Adiciona Uma Celula a Uma Lista de Palavras
 void adicionaL_palavras(L_palavras *l, char *palavra, int indice);
 
-/*======================================================*/
+// -- Busca Um nó em Uma Lista de Palavras e Retorna Seus Indices
+L_int* buscaL_palavras(L_palavras *l, char *palavra);
 
-/* Definição da Estrutura de Lista de Inteiros */
 
-struct l_int{
-    int indice;
-    struct l_int *proximo;
-};
 
-typedef struct l_int* L_int;
-
-/* Definição das Funções da Lista de Inteiros */
-
-// -- Cria Uma Lista de Inteiros
-L_int* criaL_int();
-
-// -- Percorre Uma Lista de Inteiros Com Uma Função
-void percorreL_int(L_int *l, void (*fnc)(L_int*), int mode);
-
-// -- Libera Uma Celula de Lista de Inteiros
-void liberaL_int_celula(L_int *l);
-
-// -- Imprime Uma Celula de Lista de Inteiros
-void imprimeL_int_celula(L_int *l);
-
-// -- Adiciona Uma Celula a Uma Lista de Inteiros
-void adicionaL_int(L_int *l, int indice);
 
 #endif

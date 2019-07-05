@@ -107,6 +107,15 @@ void adicionaL_palavras(L_palavras *l, char *palavra, int indice){
 
 }
 
+// -- Busca Um nó em Uma Lista de Palavras e Retorna Seus Indices
+L_int* buscaL_palavras(L_palavras *l, char *palavra){
+    if(l == NULL) return NULL;
+    if(*l == NULL) return NULL;
+
+    if(0 == strcmp(palavra, (*l)->dados->palavra)) return (*l)->dados->indices;
+    else buscaL_palavras(&((*l)->proximo), palavra);
+}
+
 /*======================================================*/
 
 // -- Cria Uma Lista de Inteiros

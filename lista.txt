@@ -1,1 +1,0 @@
-Insertion time of textos/dracula.txt in list: 3.573319 seconds

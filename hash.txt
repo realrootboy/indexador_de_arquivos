@@ -1,4 +1,0 @@
-Insertion time of textos/pequeno1.txt in hash: 0.000046 seconds
-Insertion time of textos/pequeno2.txt in hash: 0.000011 seconds
-Insertion time of textos/dracula.txt in hash: 1.579068 seconds
-Insertion time of textos/don_casmurro.txt in hash: 0.371178 seconds

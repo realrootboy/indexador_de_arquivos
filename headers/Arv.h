@@ -21,6 +21,9 @@ ArvBin* criarArvBin();
 // -- Insere Um Nó Na Arvore Binária
 void insereArvBin(ArvBin *arv, char *palavra, int indice);
 
+// -- Busca um Nó Na Arvore Binária e Retorna Seus Indices
+L_int* buscaArvBin(ArvBin *arv, char *palavra);
+
 // -- Libera Uma Arvore Binária
 void liberaArvBin(ArvBin *arv);
 
