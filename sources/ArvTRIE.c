@@ -56,15 +56,10 @@ L_int* buscaTrie(ArvTrie **tr, char *palavra){
 
     while(*palavra){
         arv = arv->filho[*palavra - 'a'];
-
         if( arv == NULL ) return NULL;
-
         palavra++;
     }
 
-    printf("PORA: %d\n", arv->isfolha);
-
-    percorreL_int(arv->indices, imprimeL_int_celula, 1);
     return arv->indices;
 }
 

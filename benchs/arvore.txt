@@ -1,13 +1,160 @@
-Insertion time of ../textos/10 dracula.txt in binary tree: 1.405370 seconds
-Insertion time of ../textos/11 MobyDick.txt in binary tree: 2.635775 seconds
-Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in binary tree: 41.426262 seconds
-Insertion time of ../textos/13 bible.txt in binary tree: 221.818653 seconds
-Insertion time of ../textos/1 BeeMovie.txt in binary tree: 0.013876 seconds
-Insertion time of ../textos/2 Alice.txt in binary tree: 0.074011 seconds
-Insertion time of ../textos/3 Oz.txt in binary tree: 0.142912 seconds
-Insertion time of ../textos/4 TreasureIsland.txt in binary tree: 0.348563 seconds
-Insertion time of ../textos/5 AroundTheWorld80days.txt in binary tree: 0.296513 seconds
-Insertion time of ../textos/6 don_casmurro.txt in binary tree: 0.374971 seconds
-Insertion time of ../textos/7 TomSawyer.txt in binary tree: 0.342712 seconds
-Insertion time of ../textos/8 Frankenstein.txt in binary tree: 0.399534 seconds
-Insertion time of ../textos/9 SherlockHolmes.txt in binary tree: 0.655575 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in binary tree: 1.390814 seconds
+Insertion time of ../textos/11 MobyDick.txt in binary tree: 2.770754 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in binary tree: 44.711279 seconds
+Insertion time of ../textos/13 bible.txt in binary tree: 240.206926 seconds
+Insertion time of ../textos/14 maximun_bible.txt in binary tree: 1250.727889 seconds
+Insertion time of ../textos/15 infinity_bible.txt in binary tree: 2045.040772 seconds
+Insertion time of ../textos/1 BeeMovie.txt in binary tree: 0.007844 seconds
+Insertion time of ../textos/2 Alice.txt in binary tree: 0.051387 seconds
+Insertion time of ../textos/3 Oz.txt in binary tree: 0.111512 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in binary tree: 0.292674 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in binary tree: 0.250261 seconds
+Insertion time of ../textos/6 don_casmurro.txt in binary tree: 0.328782 seconds
+Insertion time of ../textos/7 TomSawyer.txt in binary tree: 0.287887 seconds
+Insertion time of ../textos/8 Frankenstein.txt in binary tree: 0.344813 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in binary tree: 0.576033 seconds
+Search time of 10 words in ../textos/10 dracula.txt using binary tree: 0.000004 seconds
+Search time of 10 words in ../textos/11 MobyDick.txt using binary tree: 0.000007 seconds
+Search time of 10 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using binary tree: 0.000007 seconds
+Search time of 10 words in ../textos/13 bible.txt using binary tree: 0.000004 seconds
+Search time of 10 words in ../textos/14 maximun_bible.txt using binary tree: 0.000004 seconds
+Search time of 10 words in ../textos/15 infinity_bible.txt using binary tree: 0.000004 seconds
+Search time of 10 words in ../textos/1 BeeMovie.txt using binary tree: 0.000004 seconds
+Search time of 10 words in ../textos/2 Alice.txt using binary tree: 0.000004 seconds
+Search time of 10 words in ../textos/3 Oz.txt using binary tree: 0.000003 seconds
+Search time of 10 words in ../textos/4 TreasureIsland.txt using binary tree: 0.000003 seconds
+Search time of 10 words in ../textos/5 AroundTheWorld80days.txt using binary tree: 0.000005 seconds
+Search time of 10 words in ../textos/6 don_casmurro.txt using binary tree: 0.000007 seconds
+Search time of 10 words in ../textos/7 TomSawyer.txt using binary tree: 0.000005 seconds
+Search time of 10 words in ../textos/8 Frankenstein.txt using binary tree: 0.000004 seconds
+Search time of 10 words in ../textos/9 SherlockHolmes.txt using binary tree: 0.000003 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in binary tree: 1.325401 seconds
+Insertion time of ../textos/11 MobyDick.txt in binary tree: 2.535440 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in binary tree: 41.602404 seconds
+Insertion time of ../textos/13 bible.txt in binary tree: 220.724156 seconds
+Insertion time of ../textos/14 maximun_bible.txt in binary tree: 1205.599156 seconds
+Insertion time of ../textos/15 infinity_bible.txt in binary tree: 1918.583890 seconds
+Insertion time of ../textos/1 BeeMovie.txt in binary tree: 0.007799 seconds
+Insertion time of ../textos/2 Alice.txt in binary tree: 0.051423 seconds
+Insertion time of ../textos/3 Oz.txt in binary tree: 0.110714 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in binary tree: 0.292545 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in binary tree: 0.249773 seconds
+Insertion time of ../textos/6 don_casmurro.txt in binary tree: 0.323987 seconds
+Insertion time of ../textos/7 TomSawyer.txt in binary tree: 0.288425 seconds
+Insertion time of ../textos/8 Frankenstein.txt in binary tree: 0.344189 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in binary tree: 0.574850 seconds
+Search time of 100 words in ../textos/10 dracula.txt using binary tree: 0.000028 seconds
+Search time of 100 words in ../textos/11 MobyDick.txt using binary tree: 0.000042 seconds
+Search time of 100 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using binary tree: 0.000048 seconds
+Search time of 100 words in ../textos/13 bible.txt using binary tree: 0.000023 seconds
+Search time of 100 words in ../textos/14 maximun_bible.txt using binary tree: 0.000023 seconds
+Search time of 100 words in ../textos/15 infinity_bible.txt using binary tree: 0.000021 seconds
+Search time of 100 words in ../textos/1 BeeMovie.txt using binary tree: 0.000018 seconds
+Search time of 100 words in ../textos/2 Alice.txt using binary tree: 0.000026 seconds
+Search time of 100 words in ../textos/3 Oz.txt using binary tree: 0.000017 seconds
+Search time of 100 words in ../textos/4 TreasureIsland.txt using binary tree: 0.000015 seconds
+Search time of 100 words in ../textos/5 AroundTheWorld80days.txt using binary tree: 0.000033 seconds
+Search time of 100 words in ../textos/6 don_casmurro.txt using binary tree: 0.000047 seconds
+Search time of 100 words in ../textos/7 TomSawyer.txt using binary tree: 0.000030 seconds
+Search time of 100 words in ../textos/8 Frankenstein.txt using binary tree: 0.000024 seconds
+Search time of 100 words in ../textos/9 SherlockHolmes.txt using binary tree: 0.000022 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in binary tree: 1.349029 seconds
+Insertion time of ../textos/11 MobyDick.txt in binary tree: 2.602736 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in binary tree: 43.147160 seconds
+Insertion time of ../textos/13 bible.txt in binary tree: 222.719449 seconds
+Insertion time of ../textos/14 maximun_bible.txt in binary tree: 1207.091816 seconds
+Insertion time of ../textos/15 infinity_bible.txt in binary tree: 1918.154855 seconds
+Insertion time of ../textos/1 BeeMovie.txt in binary tree: 0.007779 seconds
+Insertion time of ../textos/2 Alice.txt in binary tree: 0.051366 seconds
+Insertion time of ../textos/3 Oz.txt in binary tree: 0.110848 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in binary tree: 0.292709 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in binary tree: 0.249574 seconds
+Insertion time of ../textos/6 don_casmurro.txt in binary tree: 0.323145 seconds
+Insertion time of ../textos/7 TomSawyer.txt in binary tree: 0.287952 seconds
+Insertion time of ../textos/8 Frankenstein.txt in binary tree: 0.344590 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in binary tree: 0.575356 seconds
+Search time of 10000 words in ../textos/10 dracula.txt using binary tree: 0.002496 seconds
+Search time of 10000 words in ../textos/11 MobyDick.txt using binary tree: 0.003911 seconds
+Search time of 10000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using binary tree: 0.004344 seconds
+Search time of 10000 words in ../textos/13 bible.txt using binary tree: 0.001966 seconds
+Search time of 10000 words in ../textos/14 maximun_bible.txt using binary tree: 0.001963 seconds
+Search time of 10000 words in ../textos/15 infinity_bible.txt using binary tree: 0.001967 seconds
+Search time of 10000 words in ../textos/1 BeeMovie.txt using binary tree: 0.001659 seconds
+Search time of 10000 words in ../textos/2 Alice.txt using binary tree: 0.002335 seconds
+Search time of 10000 words in ../textos/3 Oz.txt using binary tree: 0.001566 seconds
+Search time of 10000 words in ../textos/4 TreasureIsland.txt using binary tree: 0.001331 seconds
+Search time of 10000 words in ../textos/5 AroundTheWorld80days.txt using binary tree: 0.003035 seconds
+Search time of 10000 words in ../textos/6 don_casmurro.txt using binary tree: 0.004388 seconds
+Search time of 10000 words in ../textos/7 TomSawyer.txt using binary tree: 0.002773 seconds
+Search time of 10000 words in ../textos/8 Frankenstein.txt using binary tree: 0.002213 seconds
+Search time of 10000 words in ../textos/9 SherlockHolmes.txt using binary tree: 0.002063 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in binary tree: 1.305659 seconds
+Insertion time of ../textos/11 MobyDick.txt in binary tree: 2.507603 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in binary tree: 41.346946 seconds
+Insertion time of ../textos/13 bible.txt in binary tree: 220.860462 seconds
+Insertion time of ../textos/14 maximun_bible.txt in binary tree: 1207.988870 seconds
+Insertion time of ../textos/15 infinity_bible.txt in binary tree: 1915.803403 seconds
+Insertion time of ../textos/1 BeeMovie.txt in binary tree: 0.007780 seconds
+Insertion time of ../textos/2 Alice.txt in binary tree: 0.051272 seconds
+Insertion time of ../textos/3 Oz.txt in binary tree: 0.110696 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in binary tree: 0.292795 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in binary tree: 0.249340 seconds
+Insertion time of ../textos/6 don_casmurro.txt in binary tree: 0.322926 seconds
+Insertion time of ../textos/7 TomSawyer.txt in binary tree: 0.288272 seconds
+Insertion time of ../textos/8 Frankenstein.txt in binary tree: 0.344424 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in binary tree: 0.585036 seconds
+Search time of 100000 words in ../textos/10 dracula.txt using binary tree: 0.025365 seconds
+Search time of 100000 words in ../textos/11 MobyDick.txt using binary tree: 0.039467 seconds
+Search time of 100000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using binary tree: 0.042068 seconds
+Search time of 100000 words in ../textos/13 bible.txt using binary tree: 0.019635 seconds
+Search time of 100000 words in ../textos/14 maximun_bible.txt using binary tree: 0.019632 seconds
+Search time of 100000 words in ../textos/15 infinity_bible.txt using binary tree: 0.019894 seconds
+Search time of 100000 words in ../textos/1 BeeMovie.txt using binary tree: 0.016521 seconds
+Search time of 100000 words in ../textos/2 Alice.txt using binary tree: 0.023321 seconds
+Search time of 100000 words in ../textos/3 Oz.txt using binary tree: 0.015518 seconds
+Search time of 100000 words in ../textos/4 TreasureIsland.txt using binary tree: 0.013580 seconds
+Search time of 100000 words in ../textos/5 AroundTheWorld80days.txt using binary tree: 0.030038 seconds
+Search time of 100000 words in ../textos/6 don_casmurro.txt using binary tree: 0.043469 seconds
+Search time of 100000 words in ../textos/7 TomSawyer.txt using binary tree: 0.026892 seconds
+Search time of 100000 words in ../textos/8 Frankenstein.txt using binary tree: 0.022007 seconds
+Search time of 100000 words in ../textos/9 SherlockHolmes.txt using binary tree: 0.020636 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in binary tree: 1.296763 seconds
+Insertion time of ../textos/11 MobyDick.txt in binary tree: 2.471464 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in binary tree: 40.307757 seconds
+Insertion time of ../textos/13 bible.txt in binary tree: 214.640369 seconds
+Insertion time of ../textos/14 maximun_bible.txt in binary tree: 1185.967576 seconds
+Insertion time of ../textos/15 infinity_bible.txt in binary tree: 1924.580695 seconds
+Insertion time of ../textos/1 BeeMovie.txt in binary tree: 0.008055 seconds
+Insertion time of ../textos/2 Alice.txt in binary tree: 0.051547 seconds
+Insertion time of ../textos/3 Oz.txt in binary tree: 0.110932 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in binary tree: 0.293251 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in binary tree: 0.250311 seconds
+Insertion time of ../textos/6 don_casmurro.txt in binary tree: 0.323368 seconds
+Insertion time of ../textos/7 TomSawyer.txt in binary tree: 0.288318 seconds
+Insertion time of ../textos/8 Frankenstein.txt in binary tree: 0.345638 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in binary tree: 0.574391 seconds
+Search time of 10000000 words in ../textos/10 dracula.txt using binary tree: 2.538343 seconds
+Search time of 10000000 words in ../textos/11 MobyDick.txt using binary tree: 3.891398 seconds
+Search time of 10000000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using binary tree: 4.198022 seconds
+Search time of 10000000 words in ../textos/13 bible.txt using binary tree: 1.979861 seconds
+Search time of 10000000 words in ../textos/14 maximun_bible.txt using binary tree: 1.976993 seconds
+Search time of 10000000 words in ../textos/15 infinity_bible.txt using binary tree: 1.979886 seconds
+Search time of 10000000 words in ../textos/1 BeeMovie.txt using binary tree: 1.660160 seconds
+Search time of 10000000 words in ../textos/2 Alice.txt using binary tree: 2.309440 seconds
+Search time of 10000000 words in ../textos/3 Oz.txt using binary tree: 1.565040 seconds
+Search time of 10000000 words in ../textos/4 TreasureIsland.txt using binary tree: 1.402320 seconds
+Search time of 10000000 words in ../textos/5 AroundTheWorld80days.txt using binary tree: 2.936455 seconds
+Search time of 10000000 words in ../textos/6 don_casmurro.txt using binary tree: 4.358536 seconds
+Search time of 10000000 words in ../textos/7 TomSawyer.txt using binary tree: 2.678477 seconds
+Search time of 10000000 words in ../textos/8 Frankenstein.txt using binary tree: 2.212460 seconds
+Search time of 10000000 words in ../textos/9 SherlockHolmes.txt using binary tree: 2.080188 seconds

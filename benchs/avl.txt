@@ -1,13 +1,160 @@
-Insertion time of ../textos/10 dracula.txt in balanced binary tree: 1.924807 seconds
-Insertion time of ../textos/11 MobyDick.txt in balanced binary tree: 3.310564 seconds
-Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in balanced binary tree: 45.905407 seconds
-Insertion time of ../textos/13 bible.txt in balanced binary tree: 224.398815 seconds
-Insertion time of ../textos/1 BeeMovie.txt in balanced binary tree: 0.024162 seconds
-Insertion time of ../textos/2 Alice.txt in balanced binary tree: 0.107665 seconds
-Insertion time of ../textos/3 Oz.txt in balanced binary tree: 0.198423 seconds
-Insertion time of ../textos/4 TreasureIsland.txt in balanced binary tree: 0.459175 seconds
-Insertion time of ../textos/5 AroundTheWorld80days.txt in balanced binary tree: 0.403854 seconds
-Insertion time of ../textos/6 don_casmurro.txt in balanced binary tree: 0.513296 seconds
-Insertion time of ../textos/7 TomSawyer.txt in balanced binary tree: 0.467370 seconds
-Insertion time of ../textos/8 Frankenstein.txt in balanced binary tree: 0.527003 seconds
-Insertion time of ../textos/9 SherlockHolmes.txt in balanced binary tree: 0.859427 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in balanced binary tree: 1.569549 seconds
+Insertion time of ../textos/11 MobyDick.txt in balanced binary tree: 3.170776 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in balanced binary tree: 46.876784 seconds
+Insertion time of ../textos/13 bible.txt in balanced binary tree: 231.547966 seconds
+Insertion time of ../textos/14 maximun_bible.txt in balanced binary tree: 1224.044329 seconds
+Insertion time of ../textos/15 infinity_bible.txt in balanced binary tree: 1944.939292 seconds
+Insertion time of ../textos/1 BeeMovie.txt in balanced binary tree: 0.017010 seconds
+Insertion time of ../textos/2 Alice.txt in balanced binary tree: 0.082044 seconds
+Insertion time of ../textos/3 Oz.txt in balanced binary tree: 0.160575 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in balanced binary tree: 0.397783 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in balanced binary tree: 0.348144 seconds
+Insertion time of ../textos/6 don_casmurro.txt in balanced binary tree: 0.450531 seconds
+Insertion time of ../textos/7 TomSawyer.txt in balanced binary tree: 0.402430 seconds
+Insertion time of ../textos/8 Frankenstein.txt in balanced binary tree: 0.462416 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in balanced binary tree: 0.765062 seconds
+Search time of 10 words in ../textos/10 dracula.txt using balanced bt: 0.000018 seconds
+Search time of 10 words in ../textos/11 MobyDick.txt using balanced bt: 0.000048 seconds
+Search time of 10 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using balanced bt: 0.000021 seconds
+Search time of 10 words in ../textos/13 bible.txt using balanced bt: 0.000022 seconds
+Search time of 10 words in ../textos/14 maximun_bible.txt using balanced bt: 0.000022 seconds
+Search time of 10 words in ../textos/15 infinity_bible.txt using balanced bt: 0.000028 seconds
+Search time of 10 words in ../textos/1 BeeMovie.txt using balanced bt: 0.000008 seconds
+Search time of 10 words in ../textos/2 Alice.txt using balanced bt: 0.000010 seconds
+Search time of 10 words in ../textos/3 Oz.txt using balanced bt: 0.000013 seconds
+Search time of 10 words in ../textos/4 TreasureIsland.txt using balanced bt: 0.000012 seconds
+Search time of 10 words in ../textos/5 AroundTheWorld80days.txt using balanced bt: 0.000014 seconds
+Search time of 10 words in ../textos/6 don_casmurro.txt using balanced bt: 0.000025 seconds
+Search time of 10 words in ../textos/7 TomSawyer.txt using balanced bt: 0.000017 seconds
+Search time of 10 words in ../textos/8 Frankenstein.txt using balanced bt: 0.000010 seconds
+Search time of 10 words in ../textos/9 SherlockHolmes.txt using balanced bt: 0.000005 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in balanced binary tree: 1.573997 seconds
+Insertion time of ../textos/11 MobyDick.txt in balanced binary tree: 3.116639 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in balanced binary tree: 45.364404 seconds
+Insertion time of ../textos/13 bible.txt in balanced binary tree: 225.239574 seconds
+Insertion time of ../textos/14 maximun_bible.txt in balanced binary tree: 1215.308355 seconds
+Insertion time of ../textos/15 infinity_bible.txt in balanced binary tree: 1925.755459 seconds
+Insertion time of ../textos/1 BeeMovie.txt in balanced binary tree: 0.017033 seconds
+Insertion time of ../textos/2 Alice.txt in balanced binary tree: 0.081990 seconds
+Insertion time of ../textos/3 Oz.txt in balanced binary tree: 0.160641 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in balanced binary tree: 0.397183 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in balanced binary tree: 0.348344 seconds
+Insertion time of ../textos/6 don_casmurro.txt in balanced binary tree: 0.450967 seconds
+Insertion time of ../textos/7 TomSawyer.txt in balanced binary tree: 0.403122 seconds
+Insertion time of ../textos/8 Frankenstein.txt in balanced binary tree: 0.461775 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in balanced binary tree: 0.766924 seconds
+Search time of 100 words in ../textos/10 dracula.txt using balanced bt: 0.000109 seconds
+Search time of 100 words in ../textos/11 MobyDick.txt using balanced bt: 0.000306 seconds
+Search time of 100 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using balanced bt: 0.000120 seconds
+Search time of 100 words in ../textos/13 bible.txt using balanced bt: 0.000124 seconds
+Search time of 100 words in ../textos/14 maximun_bible.txt using balanced bt: 0.000123 seconds
+Search time of 100 words in ../textos/15 infinity_bible.txt using balanced bt: 0.000158 seconds
+Search time of 100 words in ../textos/1 BeeMovie.txt using balanced bt: 0.000043 seconds
+Search time of 100 words in ../textos/2 Alice.txt using balanced bt: 0.000057 seconds
+Search time of 100 words in ../textos/3 Oz.txt using balanced bt: 0.000079 seconds
+Search time of 100 words in ../textos/4 TreasureIsland.txt using balanced bt: 0.000063 seconds
+Search time of 100 words in ../textos/5 AroundTheWorld80days.txt using balanced bt: 0.000079 seconds
+Search time of 100 words in ../textos/6 don_casmurro.txt using balanced bt: 0.000151 seconds
+Search time of 100 words in ../textos/7 TomSawyer.txt using balanced bt: 0.000101 seconds
+Search time of 100 words in ../textos/8 Frankenstein.txt using balanced bt: 0.000059 seconds
+Search time of 100 words in ../textos/9 SherlockHolmes.txt using balanced bt: 0.000037 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in balanced binary tree: 1.575557 seconds
+Insertion time of ../textos/11 MobyDick.txt in balanced binary tree: 3.132383 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in balanced binary tree: 45.108015 seconds
+Insertion time of ../textos/13 bible.txt in balanced binary tree: 224.597510 seconds
+Insertion time of ../textos/14 maximun_bible.txt in balanced binary tree: 1215.229151 seconds
+Insertion time of ../textos/15 infinity_bible.txt in balanced binary tree: 1934.452388 seconds
+Insertion time of ../textos/1 BeeMovie.txt in balanced binary tree: 0.017020 seconds
+Insertion time of ../textos/2 Alice.txt in balanced binary tree: 0.081838 seconds
+Insertion time of ../textos/3 Oz.txt in balanced binary tree: 0.160849 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in balanced binary tree: 0.396907 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in balanced binary tree: 0.348171 seconds
+Insertion time of ../textos/6 don_casmurro.txt in balanced binary tree: 0.451000 seconds
+Insertion time of ../textos/7 TomSawyer.txt in balanced binary tree: 0.402204 seconds
+Insertion time of ../textos/8 Frankenstein.txt in balanced binary tree: 0.461871 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in balanced binary tree: 0.769857 seconds
+Search time of 10000 words in ../textos/10 dracula.txt using balanced bt: 0.009926 seconds
+Search time of 10000 words in ../textos/11 MobyDick.txt using balanced bt: 0.028257 seconds
+Search time of 10000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using balanced bt: 0.010798 seconds
+Search time of 10000 words in ../textos/13 bible.txt using balanced bt: 0.011178 seconds
+Search time of 10000 words in ../textos/14 maximun_bible.txt using balanced bt: 0.011074 seconds
+Search time of 10000 words in ../textos/15 infinity_bible.txt using balanced bt: 0.014525 seconds
+Search time of 10000 words in ../textos/1 BeeMovie.txt using balanced bt: 0.003955 seconds
+Search time of 10000 words in ../textos/2 Alice.txt using balanced bt: 0.005313 seconds
+Search time of 10000 words in ../textos/3 Oz.txt using balanced bt: 0.007103 seconds
+Search time of 10000 words in ../textos/4 TreasureIsland.txt using balanced bt: 0.005731 seconds
+Search time of 10000 words in ../textos/5 AroundTheWorld80days.txt using balanced bt: 0.007097 seconds
+Search time of 10000 words in ../textos/6 don_casmurro.txt using balanced bt: 0.014004 seconds
+Search time of 10000 words in ../textos/7 TomSawyer.txt using balanced bt: 0.009365 seconds
+Search time of 10000 words in ../textos/8 Frankenstein.txt using balanced bt: 0.005604 seconds
+Search time of 10000 words in ../textos/9 SherlockHolmes.txt using balanced bt: 0.003627 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in balanced binary tree: 1.565530 seconds
+Insertion time of ../textos/11 MobyDick.txt in balanced binary tree: 3.119464 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in balanced binary tree: 45.032618 seconds
+Insertion time of ../textos/13 bible.txt in balanced binary tree: 224.826176 seconds
+Insertion time of ../textos/14 maximun_bible.txt in balanced binary tree: 1217.153320 seconds
+Insertion time of ../textos/15 infinity_bible.txt in balanced binary tree: 1936.904210 seconds
+Insertion time of ../textos/1 BeeMovie.txt in balanced binary tree: 0.017033 seconds
+Insertion time of ../textos/2 Alice.txt in balanced binary tree: 0.081875 seconds
+Insertion time of ../textos/3 Oz.txt in balanced binary tree: 0.160474 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in balanced binary tree: 0.397042 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in balanced binary tree: 0.348188 seconds
+Insertion time of ../textos/6 don_casmurro.txt in balanced binary tree: 0.450635 seconds
+Insertion time of ../textos/7 TomSawyer.txt in balanced binary tree: 0.404094 seconds
+Insertion time of ../textos/8 Frankenstein.txt in balanced binary tree: 0.461365 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in balanced binary tree: 0.766613 seconds
+Search time of 100000 words in ../textos/10 dracula.txt using balanced bt: 0.101281 seconds
+Search time of 100000 words in ../textos/11 MobyDick.txt using balanced bt: 0.279692 seconds
+Search time of 100000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using balanced bt: 0.108103 seconds
+Search time of 100000 words in ../textos/13 bible.txt using balanced bt: 0.113541 seconds
+Search time of 100000 words in ../textos/14 maximun_bible.txt using balanced bt: 0.109576 seconds
+Search time of 100000 words in ../textos/15 infinity_bible.txt using balanced bt: 0.144745 seconds
+Search time of 100000 words in ../textos/1 BeeMovie.txt using balanced bt: 0.039670 seconds
+Search time of 100000 words in ../textos/2 Alice.txt using balanced bt: 0.052986 seconds
+Search time of 100000 words in ../textos/3 Oz.txt using balanced bt: 0.070633 seconds
+Search time of 100000 words in ../textos/4 TreasureIsland.txt using balanced bt: 0.057913 seconds
+Search time of 100000 words in ../textos/5 AroundTheWorld80days.txt using balanced bt: 0.070808 seconds
+Search time of 100000 words in ../textos/6 don_casmurro.txt using balanced bt: 0.140621 seconds
+Search time of 100000 words in ../textos/7 TomSawyer.txt using balanced bt: 0.094855 seconds
+Search time of 100000 words in ../textos/8 Frankenstein.txt using balanced bt: 0.054774 seconds
+Search time of 100000 words in ../textos/9 SherlockHolmes.txt using balanced bt: 0.037107 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in balanced binary tree: 1.585842 seconds
+Insertion time of ../textos/11 MobyDick.txt in balanced binary tree: 3.036033 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in balanced binary tree: 44.234192 seconds
+Insertion time of ../textos/13 bible.txt in balanced binary tree: 218.856382 seconds
+Insertion time of ../textos/14 maximun_bible.txt in balanced binary tree: 1189.047019 seconds
+Insertion time of ../textos/15 infinity_bible.txt in balanced binary tree: 1944.182879 seconds
+Insertion time of ../textos/1 BeeMovie.txt in balanced binary tree: 0.017008 seconds
+Insertion time of ../textos/2 Alice.txt in balanced binary tree: 0.081869 seconds
+Insertion time of ../textos/3 Oz.txt in balanced binary tree: 0.160487 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in balanced binary tree: 0.396831 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in balanced binary tree: 0.348279 seconds
+Insertion time of ../textos/6 don_casmurro.txt in balanced binary tree: 0.451141 seconds
+Insertion time of ../textos/7 TomSawyer.txt in balanced binary tree: 0.402634 seconds
+Insertion time of ../textos/8 Frankenstein.txt in balanced binary tree: 0.461788 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in balanced binary tree: 0.767884 seconds
+Search time of 10000000 words in ../textos/10 dracula.txt using balanced bt: 9.992939 seconds
+Search time of 10000000 words in ../textos/11 MobyDick.txt using balanced bt: 28.813189 seconds
+Search time of 10000000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using balanced bt: 10.895881 seconds
+Search time of 10000000 words in ../textos/13 bible.txt using balanced bt: 11.155210 seconds
+Search time of 10000000 words in ../textos/14 maximun_bible.txt using balanced bt: 11.126688 seconds
+Search time of 10000000 words in ../textos/15 infinity_bible.txt using balanced bt: 14.664054 seconds
+Search time of 10000000 words in ../textos/1 BeeMovie.txt using balanced bt: 3.928054 seconds
+Search time of 10000000 words in ../textos/2 Alice.txt using balanced bt: 5.284916 seconds
+Search time of 10000000 words in ../textos/3 Oz.txt using balanced bt: 6.985333 seconds
+Search time of 10000000 words in ../textos/4 TreasureIsland.txt using balanced bt: 5.862406 seconds
+Search time of 10000000 words in ../textos/5 AroundTheWorld80days.txt using balanced bt: 7.108373 seconds
+Search time of 10000000 words in ../textos/6 don_casmurro.txt using balanced bt: 14.254716 seconds
+Search time of 10000000 words in ../textos/7 TomSawyer.txt using balanced bt: 9.449086 seconds
+Search time of 10000000 words in ../textos/8 Frankenstein.txt using balanced bt: 5.428679 seconds
+Search time of 10000000 words in ../textos/9 SherlockHolmes.txt using balanced bt: 3.634057 seconds

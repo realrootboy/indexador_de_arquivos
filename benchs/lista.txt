@@ -1,13 +1,160 @@
-Insertion time of ../textos/10 dracula.txt in list: 3.434795 seconds
-Insertion time of ../textos/11 MobyDick.txt in list: 10.667542 seconds
-Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in list: 117.001391 seconds
-Insertion time of ../textos/13 bible.txt in list: 260.831099 seconds
-Insertion time of ../textos/1 BeeMovie.txt in list: 0.050148 seconds
-Insertion time of ../textos/2 Alice.txt in list: 0.246420 seconds
-Insertion time of ../textos/3 Oz.txt in list: 0.403048 seconds
-Insertion time of ../textos/4 TreasureIsland.txt in list: 1.023644 seconds
-Insertion time of ../textos/5 AroundTheWorld80days.txt in list: 1.128468 seconds
-Insertion time of ../textos/6 don_casmurro.txt in list: 1.510668 seconds
-Insertion time of ../textos/7 TomSawyer.txt in list: 1.318191 seconds
-Insertion time of ../textos/8 Frankenstein.txt in list: 1.352826 seconds
-Insertion time of ../textos/9 SherlockHolmes.txt in list: 1.860361 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in list: 3.472431 seconds
+Insertion time of ../textos/11 MobyDick.txt in list: 11.123196 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in list: 124.847038 seconds
+Insertion time of ../textos/13 bible.txt in list: 294.637431 seconds
+Insertion time of ../textos/14 maximun_bible.txt in list: 1374.389958 seconds
+Insertion time of ../textos/15 infinity_bible.txt in list: 2325.819225 seconds
+Insertion time of ../textos/1 BeeMovie.txt in list: 0.042266 seconds
+Insertion time of ../textos/2 Alice.txt in list: 0.219089 seconds
+Insertion time of ../textos/3 Oz.txt in list: 0.365359 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in list: 0.962972 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in list: 1.080159 seconds
+Insertion time of ../textos/6 don_casmurro.txt in list: 1.462457 seconds
+Insertion time of ../textos/7 TomSawyer.txt in list: 1.273805 seconds
+Insertion time of ../textos/8 Frankenstein.txt in list: 1.293342 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in list: 1.808369 seconds
+Search time of 10 words in ../textos/10 dracula.txt using list: 0.000007 seconds
+Search time of 10 words in ../textos/11 MobyDick.txt using list: 0.000502 seconds
+Search time of 10 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using list: 0.000547 seconds
+Search time of 10 words in ../textos/13 bible.txt using list: 0.001240 seconds
+Search time of 10 words in ../textos/14 maximun_bible.txt using list: 0.001135 seconds
+Search time of 10 words in ../textos/15 infinity_bible.txt using list: 0.001164 seconds
+Search time of 10 words in ../textos/1 BeeMovie.txt using list: 0.000155 seconds
+Search time of 10 words in ../textos/2 Alice.txt using list: 0.000290 seconds
+Search time of 10 words in ../textos/3 Oz.txt using list: 0.000362 seconds
+Search time of 10 words in ../textos/4 TreasureIsland.txt using list: 0.000530 seconds
+Search time of 10 words in ../textos/5 AroundTheWorld80days.txt using list: 0.000259 seconds
+Search time of 10 words in ../textos/6 don_casmurro.txt using list: 0.000583 seconds
+Search time of 10 words in ../textos/7 TomSawyer.txt using list: 0.000596 seconds
+Search time of 10 words in ../textos/8 Frankenstein.txt using list: 0.000556 seconds
+Search time of 10 words in ../textos/9 SherlockHolmes.txt using list: 0.000755 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in list: 3.346043 seconds
+Insertion time of ../textos/11 MobyDick.txt in list: 10.757016 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in list: 116.994474 seconds
+Insertion time of ../textos/13 bible.txt in list: 259.859797 seconds
+Insertion time of ../textos/14 maximun_bible.txt in list: 1278.339400 seconds
+Insertion time of ../textos/15 infinity_bible.txt in list: 2198.721946 seconds
+Insertion time of ../textos/1 BeeMovie.txt in list: 0.042193 seconds
+Insertion time of ../textos/2 Alice.txt in list: 0.216986 seconds
+Insertion time of ../textos/3 Oz.txt in list: 0.361025 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in list: 0.948850 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in list: 1.065354 seconds
+Insertion time of ../textos/6 don_casmurro.txt in list: 1.432582 seconds
+Insertion time of ../textos/7 TomSawyer.txt in list: 1.248091 seconds
+Insertion time of ../textos/8 Frankenstein.txt in list: 1.273425 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in list: 1.759096 seconds
+Search time of 100 words in ../textos/10 dracula.txt using list: 0.006031 seconds
+Search time of 100 words in ../textos/11 MobyDick.txt using list: 0.015069 seconds
+Search time of 100 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using list: 0.059310 seconds
+Search time of 100 words in ../textos/13 bible.txt using list: 0.013345 seconds
+Search time of 100 words in ../textos/14 maximun_bible.txt using list: 0.013360 seconds
+Search time of 100 words in ../textos/15 infinity_bible.txt using list: 0.071773 seconds
+Search time of 100 words in ../textos/1 BeeMovie.txt using list: 0.001763 seconds
+Search time of 100 words in ../textos/2 Alice.txt using list: 0.002592 seconds
+Search time of 100 words in ../textos/3 Oz.txt using list: 0.003101 seconds
+Search time of 100 words in ../textos/4 TreasureIsland.txt using list: 0.004353 seconds
+Search time of 100 words in ../textos/5 AroundTheWorld80days.txt using list: 0.005637 seconds
+Search time of 100 words in ../textos/6 don_casmurro.txt using list: 0.007706 seconds
+Search time of 100 words in ../textos/7 TomSawyer.txt using list: 0.005290 seconds
+Search time of 100 words in ../textos/8 Frankenstein.txt using list: 0.005094 seconds
+Search time of 100 words in ../textos/9 SherlockHolmes.txt using list: 0.006951 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in list: 3.414707 seconds
+Insertion time of ../textos/11 MobyDick.txt in list: 10.979488 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in list: 116.401048 seconds
+Insertion time of ../textos/13 bible.txt in list: 260.041238 seconds
+Insertion time of ../textos/14 maximun_bible.txt in list: 1279.830790 seconds
+Insertion time of ../textos/15 infinity_bible.txt in list: 2211.660481 seconds
+Insertion time of ../textos/1 BeeMovie.txt in list: 0.042084 seconds
+Insertion time of ../textos/2 Alice.txt in list: 0.217321 seconds
+Insertion time of ../textos/3 Oz.txt in list: 0.360808 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in list: 0.954068 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in list: 1.066338 seconds
+Insertion time of ../textos/6 don_casmurro.txt in list: 1.436477 seconds
+Insertion time of ../textos/7 TomSawyer.txt in list: 1.248389 seconds
+Insertion time of ../textos/8 Frankenstein.txt in list: 1.277916 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in list: 1.756671 seconds
+Search time of 10000 words in ../textos/10 dracula.txt using list: 0.364772 seconds
+Search time of 10000 words in ../textos/11 MobyDick.txt using list: 1.032806 seconds
+Search time of 10000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using list: 3.924541 seconds
+Search time of 10000 words in ../textos/13 bible.txt using list: 1.058859 seconds
+Search time of 10000 words in ../textos/14 maximun_bible.txt using list: 1.085481 seconds
+Search time of 10000 words in ../textos/15 infinity_bible.txt using list: 5.277273 seconds
+Search time of 10000 words in ../textos/1 BeeMovie.txt using list: 0.138066 seconds
+Search time of 10000 words in ../textos/2 Alice.txt using list: 0.194237 seconds
+Search time of 10000 words in ../textos/3 Oz.txt using list: 0.220035 seconds
+Search time of 10000 words in ../textos/4 TreasureIsland.txt using list: 0.346204 seconds
+Search time of 10000 words in ../textos/5 AroundTheWorld80days.txt using list: 0.353470 seconds
+Search time of 10000 words in ../textos/6 don_casmurro.txt using list: 0.786124 seconds
+Search time of 10000 words in ../textos/7 TomSawyer.txt using list: 0.377084 seconds
+Search time of 10000 words in ../textos/8 Frankenstein.txt using list: 0.368076 seconds
+Search time of 10000 words in ../textos/9 SherlockHolmes.txt using list: 0.415696 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in list: 3.474207 seconds
+Insertion time of ../textos/11 MobyDick.txt in list: 10.607511 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in list: 117.019330 seconds
+Insertion time of ../textos/13 bible.txt in list: 260.457137 seconds
+Insertion time of ../textos/14 maximun_bible.txt in list: 1280.245278 seconds
+Insertion time of ../textos/15 infinity_bible.txt in list: 2202.568462 seconds
+Insertion time of ../textos/1 BeeMovie.txt in list: 0.042218 seconds
+Insertion time of ../textos/2 Alice.txt in list: 0.218337 seconds
+Insertion time of ../textos/3 Oz.txt in list: 0.362946 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in list: 0.955981 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in list: 1.071261 seconds
+Insertion time of ../textos/6 don_casmurro.txt in list: 1.441771 seconds
+Insertion time of ../textos/7 TomSawyer.txt in list: 1.253722 seconds
+Insertion time of ../textos/8 Frankenstein.txt in list: 1.281360 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in list: 1.765385 seconds
+Search time of 100000 words in ../textos/10 dracula.txt using list: 3.598744 seconds
+Search time of 100000 words in ../textos/11 MobyDick.txt using list: 9.564565 seconds
+Search time of 100000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using list: 38.354151 seconds
+Search time of 100000 words in ../textos/13 bible.txt using list: 10.993484 seconds
+Search time of 100000 words in ../textos/14 maximun_bible.txt using list: 10.727345 seconds
+Search time of 100000 words in ../textos/15 infinity_bible.txt using list: 52.072620 seconds
+Search time of 100000 words in ../textos/1 BeeMovie.txt using list: 1.379627 seconds
+Search time of 100000 words in ../textos/2 Alice.txt using list: 1.923228 seconds
+Search time of 100000 words in ../textos/3 Oz.txt using list: 2.181965 seconds
+Search time of 100000 words in ../textos/4 TreasureIsland.txt using list: 3.408266 seconds
+Search time of 100000 words in ../textos/5 AroundTheWorld80days.txt using list: 3.476081 seconds
+Search time of 100000 words in ../textos/6 don_casmurro.txt using list: 8.062502 seconds
+Search time of 100000 words in ../textos/7 TomSawyer.txt using list: 3.642633 seconds
+Search time of 100000 words in ../textos/8 Frankenstein.txt using list: 3.667777 seconds
+Search time of 100000 words in ../textos/9 SherlockHolmes.txt using list: 4.008948 seconds
+Buscando palavras aleatorias... Palavras aleatorias carregadas.
+
+Insertion time of ../textos/10 dracula.txt in list: 3.209987 seconds
+Insertion time of ../textos/11 MobyDick.txt in list: 9.709304 seconds
+Insertion time of ../textos/12 Infinite-Jest-David-Foster-Wallace.txt in list: 113.987450 seconds
+Insertion time of ../textos/13 bible.txt in list: 259.818956 seconds
+Insertion time of ../textos/14 maximun_bible.txt in list: 1277.515701 seconds
+Insertion time of ../textos/15 infinity_bible.txt in list: 2196.614182 seconds
+Insertion time of ../textos/1 BeeMovie.txt in list: 0.042437 seconds
+Insertion time of ../textos/2 Alice.txt in list: 0.217917 seconds
+Insertion time of ../textos/3 Oz.txt in list: 0.362159 seconds
+Insertion time of ../textos/4 TreasureIsland.txt in list: 0.956573 seconds
+Insertion time of ../textos/5 AroundTheWorld80days.txt in list: 1.071693 seconds
+Insertion time of ../textos/6 don_casmurro.txt in list: 1.442047 seconds
+Insertion time of ../textos/7 TomSawyer.txt in list: 1.253021 seconds
+Insertion time of ../textos/8 Frankenstein.txt in list: 1.279936 seconds
+Insertion time of ../textos/9 SherlockHolmes.txt in list: 1.788217 seconds
+Search time of 10000000 words in ../textos/10 dracula.txt using list: 355.317154 seconds
+Search time of 10000000 words in ../textos/11 MobyDick.txt using list: 904.175713 seconds
+Search time of 10000000 words in ../textos/12 Infinite-Jest-David-Foster-Wallace.txt using list: 3834.763628 seconds
+Search time of 10000000 words in ../textos/13 bible.txt using list: 1032.332854 seconds
+Search time of 10000000 words in ../textos/14 maximun_bible.txt using list: 1028.731703 seconds
+Search time of 10000000 words in ../textos/15 infinity_bible.txt using list: 5304.631534 seconds
+Search time of 10000000 words in ../textos/1 BeeMovie.txt using list: 137.443872 seconds
+Search time of 10000000 words in ../textos/2 Alice.txt using list: 191.199763 seconds
+Search time of 10000000 words in ../textos/3 Oz.txt using list: 217.250164 seconds
+Search time of 10000000 words in ../textos/4 TreasureIsland.txt using list: 339.363980 seconds
+Search time of 10000000 words in ../textos/5 AroundTheWorld80days.txt using list: 345.696579 seconds
+Search time of 10000000 words in ../textos/6 don_casmurro.txt using list: 805.453171 seconds
+Search time of 10000000 words in ../textos/7 TomSawyer.txt using list: 359.647195 seconds
+Search time of 10000000 words in ../textos/8 Frankenstein.txt using list: 364.763765 seconds
+Search time of 10000000 words in ../textos/9 SherlockHolmes.txt using list: 396.744434 seconds
